@@ -1,0 +1,235 @@
+TEST CASES USING BROWSER DEVTOOLS
+TC-DT01 – Validate Responsiveness Across Multiple Devices
+
+Objective: Verify layout behavior using DevTools Device Emulation
+Steps:
+
+Open website.
+
+Press F12 to open DevTools.
+
+Select “Toggle Device Toolbar”.
+
+Test layouts using devices: iPhone 12, Pixel 7, Samsung Galaxy S8, iPad, Moto G4.
+
+Inspect header, buttons, text alignment and forms.
+Expected Result:
+All layouts adjust correctly without breaking or overlapping elements.
+Actual Result:
+(Your result here)
+
+TC-DT02 – Detect Layout Breaks With Custom Widths
+
+Objective: Identify breakpoints that are not defined in CSS
+Steps:
+
+Open DevTools → “Toggle Device Toolbar”.
+
+Manually drag the screen width to arbitrary values (340px → 600px).
+
+Verify alignment, images and buttons at each width.
+Expected Result:
+No layout break occurs at any width.
+Actual Result:
+(Your result here)
+
+TC-DT03 – Validate Network Requests (Status Codes & Timing)
+
+Objective: Ensure all network requests load successfully
+Steps:
+
+Open DevTools → Network.
+
+Reload the page.
+
+Check each request: status code, size, timing.
+
+Identify any failed, delayed or blocked resources.
+Expected Result:
+All requests return 200/304; no failed (404/500) or slow (>2s) resources.
+Actual Result:
+(Your result here)
+
+TC-DT04 – Validate Console Errors
+
+Objective: Ensure the website loads without JavaScript errors
+Steps:
+
+Open DevTools → Console tab.
+
+Reload the page.
+
+Check for errors or warnings.
+Expected Result:
+No JavaScript errors, no red error messages. Acceptable number of warnings allowed.
+Actual Result:
+(Your result here)
+
+TC-DT05 – Performance Audit Using Lighthouse
+
+Objective: Measure page performance, accessibility and SEO
+Steps:
+
+Open DevTools → Lighthouse.
+
+Select “Mobile” mode.
+
+Run the audit.
+
+Record Performance, Accessibility, SEO and Best Practices scores.
+Expected Result:
+Performance ≥ 70
+Accessibility ≥ 80
+No critical issues found.
+Actual Result:
+(Your result here)
+
+TC-DT06 – Simulate Slow Network (Throttling)
+
+Objective: Validate behavior under poor connectivity
+Steps:
+
+Open DevTools → Network.
+
+Select “Fast 3G” then “Slow 3G”.
+
+Reload the page.
+
+Observe loading times and element appearance.
+Expected Result:
+Content loads progressively, essential elements load within 5–10s, no complete failure.
+Actual Result:
+(Your result here)
+
+TC-DT07 – Check Local Storage Usage
+
+Objective: Verify that the website properly stores and retrieves data
+Steps:
+
+Open DevTools → Application → Local Storage.
+
+Navigate through the website.
+
+Observe which keys are created or updated.
+
+Refresh the page and ensure values persist.
+Expected Result:
+Stored values are correct and persist across sessions when expected.
+Actual Result:
+(Your result here)
+
+TC-DT08 – Validate Session Storage Behavior
+
+Objective: Confirm temporary values are stored only for the active session
+Steps:
+
+Open DevTools → Application → Session Storage.
+
+Trigger actions (form inputs, navigation).
+
+Close the tab and reopen the site.
+Expected Result:
+Session storage clears when tab is closed.
+Actual Result:
+(Your result here)
+
+TC-DT09 – Check Cookies (Security Flags)
+
+Objective: Ensure cookies comply with security standards
+Steps:
+
+Open DevTools → Application → Cookies.
+
+Validate attributes: Secure, HttpOnly, SameSite.
+Expected Result:
+Cookies must not expose sensitive data; secure flags applied when appropriate.
+Actual Result:
+(Your result here)
+
+TC-DT10 – Observe Render Performance (FPS Meter)
+
+Objective: Detect UI lag or animation issues
+Steps:
+
+Open DevTools → Rendering.
+
+Enable FPS Meter.
+
+Interact with animations, scroll page.
+Expected Result:
+FPS remains stable (>40), no visible lag.
+Actual Result:
+(Your result here)
+
+TC-DT11 – Validate Media Queries
+
+Objective: Ensure CSS media queries trigger correctly
+Steps:
+
+Inspect elements → Styles.
+
+Adjust widths in Device Toolbar.
+
+Verify which media queries activate.
+Expected Result:
+Correct CSS rules apply at each breakpoint.
+Actual Result:
+(Your result here)
+
+TC-DT12 – Test Dark/Light Mode (If Exists)
+
+Objective: Validate theme switching using prefers-color-scheme
+Steps:
+
+Open DevTools → Rendering.
+
+Force dark mode.
+
+Force light mode.
+Expected Result:
+Colours, shadows and icons adapt properly for each theme.
+Actual Result:
+(Your result here)
+
+TC-DT13 – Validate Lazy Loading of Images
+
+Objective: Ensure images load only when visible
+Steps:
+
+Open DevTools → Network.
+
+Scroll through the page slowly.
+
+Check image loading behavior (look for “lazy” flag).
+Expected Result:
+Images load only when approaching viewport.
+Actual Result:
+(Your result here)
+
+TC-DT14 – Detect Layout Shift (CLS Test)
+
+Objective: Identify elements moving during load
+Steps:
+
+Open DevTools → Performance.
+
+Record page load.
+
+Observe Cumulative Layout Shift score.
+Expected Result:
+CLS should be low (<0.1). No major shifting of text/buttons.
+Actual Result:
+(Your result here)
+
+TC-DT15 – Validate Missing Alt Text
+
+Objective: Check accessibility for images
+Steps:
+
+Inspect images.
+
+Verify alt attributes.
+Expected Result:
+All images include meaningful alt text.
+Actual Result:
+(Your result here)
