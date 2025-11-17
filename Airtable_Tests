@@ -1,0 +1,43 @@
+https://airtable.com/appRlbXDslhv8YZRV/shrTyyqVsg4U0MIVC
+
+TC01 – New Record
+
+Steps:
+
+1 - Create a New Record
+
+Expected result: New record saved with correct values.
+
+Actual result: Pass – Record created successfully.
+
+TC02 – Validate Table Filters
+
+Steps: 
+
+1 - Apply 1 filter on the table
+
+Expected result: Only filtered records appear.
+
+Actual result: Pass – Filter works as expected.
+
+2 - Apply 3 filter on the same table
+
+Expected result: Only filtered records appear.
+
+Actual result: Pass – Filter works as expected.
+
+TC03 – Validate Column Sorting
+
+Steps:
+
+1 - Select table "utilizador" and sort by "cliente"
+
+Expected: Sorting reorders items correctly.
+Actual: Pass – Sorting works in both directions.
+
+TC04 – Export Database to CSV
+
+1 - Select a table and Export to CSV
+
+Expected: CSV contains correct number of records.
+Actual: Pass – Export matches table data.
