@@ -1,0 +1,175 @@
+https://petlovers.softr.app
+
+TC-ST01 – Validate User Login Flow (Highly Detailed)
+
+Objective: Verify that a user can log in with valid credentials.
+
+Preconditions:
+– A valid user account exists
+– Login block is active on the Softr page
+
+Steps:
+
+1 - Open the Softr application URL.
+
+2 - Confirm the login block is visible (Email + Password fields, Login button).
+
+3 - Click inside the Email field.
+
+4 - Type a valid email
+
+5 - Click inside the Password field.
+
+6 - Type a valid password.
+
+7 - Click the Login button.
+
+Observe the page behavior:
+– Spinner or loading icon
+– Redirect
+
+Wait for the redirect to complete.
+
+Expected Result:
+User is authenticated and redirected to the correct “Logged-in” page without error messages.
+
+Actual Result:
+(Your result here)
+
+TC-ST02 – Validate Login Error Message (Invalid Credentials)
+
+Objective: Ensure incorrect credentials trigger the proper error.
+
+Steps:
+
+1 - Open the login page.
+
+2 - Enter an invalid email format (e.g., abc).
+
+3 - Enter any password.
+
+4 - Click “Login”.
+
+5 - Observe validation behavior.
+
+6 - Now enter a valid email with a wrong password.
+
+7 - Click “Login”.
+
+Expected Result:
+– Validation message for invalid email format
+– Error message: “Incorrect email or password”
+
+Actual Result:
+(Your result here)
+
+TC-ST03 – Validate Navigation Buttons (View Project / More Info)
+
+Objective: Confirm that buttons inside Softr collections open the correct pages.
+
+Steps:
+
+1 - Open the Softr homepage.
+
+2 - Scroll to the “Projects” or “Portfolio” collection.
+
+3 - Hover over a project card.
+
+4 - Identify the button “View Project” or similar.
+
+5 - Click the button.
+
+6 - Observe the redirect.
+
+7 - Verify that the new page shows the correct project details.
+
+8 - Navigate back using browser back arrow.
+
+Expected Result:
+Button correctly opens the matching project; content belongs to that item.
+
+Actual Result:
+(Your result here)
+
+TC-ST04 – Validate Conditional Visibility (Logged-in vs Logged-out)
+
+Objective: Ensure restricted content is hidden for guests.
+
+Steps:
+
+1 - Open Softr site in incognito mode.
+
+2 - Navigate through all pages.
+
+3 - Verify that sections marked for logged-in users are hidden.
+
+4 - Log in with a valid account.
+
+5 - Revisit same pages.
+
+6 - Confirm previously hidden content is now visible.
+
+Expected Result:
+Guest users do not see restricted content; logged-in users do.
+
+Actual Result:
+(Your result here)
+
+TC-ST05 – Validate Form Submission (Contact Form / Custom Form)
+
+Objective: Ensure form captures data and shows success message.
+
+Steps:
+
+1 - Open the form page.
+
+2 - Click on the first field (Name) and type a valid name.
+
+3 - Click on the Email field and type a valid email.
+
+4 - Fill remaining fields.
+
+5 - Click the Submit button.
+
+6 - Observe loading indicator.
+
+7 - Wait for success confirmation.
+
+Refresh the page and verify:
+– Form is cleared
+– No duplicate submissions
+
+Expected Result:
+Form submits successfully and success message is displayed.
+
+Actual Result:
+(Your result here)
+
+TC-ST06 – Validate Softr Search or Filter Functionality
+
+Objective: Verify search/filter blocks return correct results.
+
+Steps:
+
+Navigate to the page containing the Search or Filter block.
+
+Click inside the search bar.
+
+Type a keyword that exists in database records.
+
+Press Enter.
+
+Observe displayed results.
+
+Clear search.
+
+Type a keyword that does NOT exist.
+
+Press Enter.
+
+Expected Result:
+– Existing keyword returns correct records
+– Non-existent keyword returns zero results and/or “No results found”
+
+Actual Result:
+(Your result here)
